@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <title>EXO</title>
+    <link rel="shortcut icon" href="../img/exo.png">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+   
+    <nav class="navbar">
+        <div class="logo">
+        <a href="../index.html">
+            <img src="../img/Exo_Planet.png" width="150" height="40"><img src="../img/logo.png" width="45" height="40">
+        </a>
+        </div>
+        <ul class="nav_links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="disco.html">Discografía</a></li>
+            <li><a href="planet.html">Conciertos</a></li>
+            <li><a href="var.html">Entretenimiento</a></li>
+            <li><a href="media.html">Series y Películas</a></li>
+            <li><a href="form.html">Test</a></li>
+        </ul>
+    </nav>
+    <div class="conthead">
+        <img class="header_test" src="https://64.media.tumblr.com/5cab8cf3fb5fa6f155abc9dcbea94a92/tumblr_nz81hmTq9w1rwsan9o1_1280.jpg" >
+    </div>
+    
+    <div class="cont">
+        <h1>TEST</h1>
+        <br><hr><br>
+
+        <h2>¡Ponte a prueba!</h2>
+        <br>
+        <p class="centro">Intenta resolver este test y averigua qué tanto sabes de EXO.</p>
+        <br><br>
+
+        <div id="formu">
+        <form action="#respuestas">
+           
+            <fieldset>
+                <legend>FÁCIL</legend>
+               
+                    <p>1. ¿Cuál es la agencia de EXO?:</p>
+                    <div class="pr">
+                        <input type="radio" id="sm" name="ent" value="SM" required>
+                        <label for="sm">SM ENTERTAIMENT</label><br>
+                        <input type="radio" id="inb" name="ent" value="INB100" required>
+                        <label for="inb">INB100 ENTERTAIMENT</label ><br>
+                        <input type="radio" id="sw" name="ent" value="SW" required>
+                        <label for="sw">SW ENTERTAIMENT</label>
+                    </div>
+
+                    <br><br>
+                    <label for="cantidad">2. ¿Cuántos integrantes son actualmente?:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="13" required>
+
+                    <br><br>
+                    <label for="nombre">3. ¿Quién es el Maknae (el más joven) ?:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <p>4. ¿Cuáles son subunidades de EXO?:</p>
+                    <div class="pr">
+                        <input type="checkbox" id="cbx" name="sub1" value="cbx">
+                        <label for="cbx"> EXO-CBX</label><br>
+                        <input type="checkbox" id="sky" name="sub2" value="sky">
+                        <label for="sky">EXO-SKY</label><br>
+                        <input type="checkbox" id="sc" name="sub3" value="sc">
+                        <label for="sc"> EXO-SC</label>  
+                    </div>
+              
+            </fieldset>
+            <fieldset>
+                <legend>MEDIO</legend>
+               
+                    <p></p>
+                    <label for="favcolor">5. ¿Cuál es el color oficial de EXO?:</label>
+                    <input type="color" id="favcolor" name="favcolor" required>
+
+                    <br><br>
+                    <label for="debut">6. ¿Cuándo debutó EXO?:</label>
+                    <input type="date" id="debut" name="debut" required>
+
+                    <br><br>
+                    <label for="exol">7. ¿Cuándo se supo el nombre oficial del fandom EXO-L (Mes y año):</label>
+                    <input type="month" id="exol" name="exol" required>
+
+                    <br><br>
+                    <label for='opp'> 8. ¿Cuál es el nombre real del líder de EXO? (SUHO)?: </label> 
+                    <select id='opp'>
+                        <option>...</option>
+                        <option value='op1'>Park JungIn</option>
+                        <option value='op2'>Kim Junmyeon</option>
+                        <option value='op3'>Kim Jongdae</option>
+                    </select>
+
+
+               
+            </fieldset>
+
+            <fieldset>
+                <legend>DIFÍCIL</legend>
+
+                    <p>9. ¿Qué integrante aún permanece en la agencia de EXO?:</p>
+                    <div class="pr">
+                        <input type="radio" id="sm" name="ent" value="SM" required>
+                        <label for="sm">Chanyeol</label><br>
+                        <input type="radio" id="inb" name="ent" value="INB100" required>
+                        <label for="inb">D.O.</label ><br>
+                        <input type="radio" id="sw" name="ent" value="SW" required>
+                        <label for="sw">Lay</label>
+                    </div>
+
+                    <br><br>
+                    <label for='solo'>10. ¿Quién fue el primero en debutar en solitario?: </label>
+                    <select id='solo'>
+                        <option>...</option>
+                        <option value='op1'>Baekhyun</option>
+                        <option value='op2'>Chen</option>
+                        <option value='op3'>Lay</option>
+                    </select>
+
+                    <br><br>
+                    <p>11. ¿Cuáles canciones pertenecen al álbum 'EXODUS' ?:</p>
+                    <div class="pr">
+                        <input type="checkbox" id="ml" name="sub1" value="ml">
+                        <label for="ml">My Lady</label><br>
+                        <input type="checkbox" id="th" name="sub2" value="th">
+                        <label for="th">Thunder</label><br>
+                        <input type="checkbox" id="h" name="sub3" value="h">
+                        <label for="h">Hurt</label><br>
+                        <input type="checkbox" id="al" name="sub3" value="al">
+                        <label for="al">Artificial Love</label><br>
+                        <input type="checkbox" id="p" name="sub4" value="p">
+                        <label for="p">Playboy</label><br>
+                        <input type="checkbox" id="tl" name="sub5" value="tl">
+                        <label for="tl">Tender Love</label>
+                    </div>
+
+                    <br><br>
+                    <label for="xiu">12. ¿Quién canta la canción 'Serenity' ?:</label>
+                    <input type="text" id="xiu" name="xiu" required><br><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Cómo crees que te fue?</legend>
+                <textarea id='op' name='op' rows='5' cols='50'></textarea>
+            </fieldset><br>
+
+            <div class="botones">
+                <input type="reset" id="lim" name="lim" value='Borrar respuestas'>&nbsp;&nbsp;&nbsp;
+                <input type="submit" id="env" name="env" value='Enviar'><br>
+            </div>
+
+        </form>
+    </div>
+
+        <br><br>
+
+        <div id="respuestas" class="respuestas">
+          
+            <h2>Respuestas Correctas</h2><br>
+                <div id="resp">
+
+                    <div class="cols">
+                        <div id="listaresp">
+                            <ol>
+                                <li>SM ENTERTAIMENT</li>
+                                <li>9 integrantes</li>
+                                <li>Sehun</li>
+                                <li>EXO-CBX y EXO-SC</li>
+                                <li>El color es Cosmic Latte.<br> El color parecido a un beige de la página. rgb(255, 248, 230)</li>
+                                <li>Debutaron el 8 de abril del 2012</li>
+                                <li>En Agosto de 2014</li>
+                                <li>Kim Junmyeon</li>
+                                <li>Chanyeol</li>
+                                <li>Lay</li>
+                                <li>Hurt, Playboy y Tender Love</li>
+                                <li>Xiumin</li>
+                            </ol>
+                           
+                            
+                        </div>
+                        <div class="columna">
+                            <h3>¿Cuántas tuviste bien?</h3>
+                            <br>
+                            <table id="tabla_aciertos">
+                                <tr>
+                                    <th>ACIERTOS</th>
+                                    <th>CALIFICACIÓN</th>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>9.1</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>8.3</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>7.5</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>6.6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>5.8</td>
+                                </tr>
+                                <tr>
+                                    <td>6-0</td>
+                                    <td>Te falta un largo camino para ser una verdadera EXO-L</td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+           
+        </div>
+
+    </div>
+    <footer>
+        <hr>
+        <h4>SÍGUELOS</h4><br>
+        <div class="redes">
+            <a href="https://www.youtube.com/channel/UCzCedBCSSltI1TFd3bKyN6g"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" width="35" height="25"></a>&nbsp;&nbsp;
+            <a href="https://x.com/weareoneexo"><img src="https://cdn.worldvectorlogo.com/logos/twitter-logo-2.svg" width="25" height="25"></a>&nbsp;&nbsp;
+            <a href="https://www.tiktok.com/@weareone.exo_official?lang=eso"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARgO0wm2FlVo7wcb9mdIWvNFPbwOJARLNEm7bS5HE19swSLyWkr4jSvLSyHeQmDbmWWs&usqp=CAU" width="25" height="25"></a>&nbsp;&nbsp;
+
+            <a href="https://www.instagram.com/weareone.exo/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" width="25" height="25"></a>&nbsp;&nbsp;
+            <a href="https://www.facebook.com/weareoneEXO/?locale=es_LA"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" width="25" height="25"></a>
+        </div> 
+        
+        <br><br>
+        
+    </footer>
+
+</body>
+</html>
