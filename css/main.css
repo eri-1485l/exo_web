@@ -1,0 +1,610 @@
+
+/*ESTILO GENERAL DEL SITIO*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*permite predecir con precisión el tamaño de los elementos sin tener que ajustar constantemente los valores de ancho y alto para compensar los bordes y rellenos*/
+}
+
+/*para que sea suave el deslizamiento al hacer clic en un hipervinculo interno */
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f8f8f0;
+}
+
+
+/*------------------------------------CONTENIDO DE LA BARRA DE NAVEGACIÓN------------------------------------- */
+.navbar {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgba(255, 248, 230, 0.788);
+    display: flex;
+    align-items: center; /*alineacion horizontal*/
+    justify-content: space-evenly;
+    font-weight: bolder ;
+    padding: 0.5%;
+    position: fixed; /* mantiene la barra fija */
+    top:0;
+    margin-top: 1%;
+    width: 90%; 
+    margin-left: 5%;
+    z-index: 1000; /*encima de otros elementos */
+    border-radius: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.logo {
+    margin-top: 1%;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+}
+
+.nav_links li {
+    margin-left: 2vw; 
+}
+
+.nav_links a { 
+    text-decoration: none;
+    transition: color 0.3s; /*el cambio se ve mas lento*/
+    color: #13141e;
+}
+
+.nav_links a:hover {
+    color:#42acf3;
+}
+
+  
+/* ----------------------------CONTENIDO DE LA PÁGINA--------------------------------------------- */
+.cont {
+    padding: 5%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer{
+    background: linear-gradient(to right, #d183aa 0%, #dfeded 100%);
+}
+
+
+
+/*----------------------------------------------- HEADER -------------------------------------------------------*/
+/*contenedor para las imagenes header de las demás paginas*/
+.conthead{
+    width: 100%; 
+    height: 30vw; 
+    overflow: hidden; /*oculta el desbordamiento */
+    position: relative;
+    
+}
+
+.cont_head_index{
+    width: 100%; 
+    height: 100vh;
+    overflow: hidden;
+    position: relative;   
+    display: inline-block; 
+    
+}
+
+/*para mantener el tamaño de las imagenes originales y mantenga su calidad*/
+.img_head_index{
+    position: absolute; /*Posicionamiento absoluto para mover la imagen */
+    top: -170px; /* Ajusta la posición vertical de la imagen */
+    left: -0px; /* Ajusta la posición horizontal de la imagen */
+    width: auto; /* Mantiene el tamaño original */
+    height: auto; /* Mantiene el tamaño original */
+    min-width: 100%; /* Asegura que cubra el contenedor */
+    min-height: 100%; 
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+}
+
+/*titulo sobre la imagen*/
+.titulo{
+    font-family: "Audiowide", sans-serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*pone centrado*/
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(123, 123, 238), 0 0 5px rgb(139, 0, 65);
+     
+}
+
+/*imagen gif con hipervinculo interno posicionado dentro del contenedor del header*/
+.bt{
+    position: absolute;
+    top: 90%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+/*para las paginas disco y media*/   
+.header{
+    position: absolute; 
+    top: -170px; 
+    left: -0px; 
+    width: auto; 
+    height: auto; 
+    min-width: 100%; 
+    min-height: 100%; 
+    object-fit: cover; 
+    
+}
+
+.header_planet{
+    position: absolute; 
+    top: -138px; 
+    left: -0px; 
+    width: auto; 
+    height: auto; 
+    min-width: 100%;
+    min-height: 100%; 
+    object-fit: cover; 
+    
+}
+    /*AJUSTE PARA LA PAGINA DE ENTRETENIMIENTO*/
+#game{
+    position: absolute; 
+    top: -870px; 
+    left: -0px; 
+    width: auto; 
+    height: auto; 
+    min-width: 100%; 
+    min-height: 100%; 
+    object-fit: cover;  
+}
+
+
+.header_test{
+    position: absolute; 
+    top: -60px; 
+    left: -0px; 
+    width: auto; 
+    height: auto; 
+    min-width: 100%; 
+    min-height: 100%; 
+    object-fit: cover; 
+    
+}
+
+/*-------------------------------------------TITULOS---------------------------------------------------------*/
+h1{
+    font-family: 'Exo', sans-serif; 
+    color: #333;
+    font-size: 2.5rem; /*medida relativa root */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(221, 133, 155, 0.8), 0 0 20px rgba(0, 4, 255, 0.5);
+}
+
+h2{
+    font-family: "Audiowide", sans-serif;
+    color:#1e2b4e;
+    text-align: center;
+    background: linear-gradient(to right, #d183aa 0%, #dfeded 100%);
+    border-radius: 20px;
+    padding: 1%;
+}
+
+h3{
+    font-family: "Audiowide", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    color: #4b1535;
+    padding-left: 2%;
+ }
+
+ h4{
+    font-family: "Audiowide", sans-serif;
+    text-align: center;  
+ }
+
+/*-------------------------------------------TEXTO-------------------------------------------------------*/
+
+
+p{
+    text-align:justify;
+    line-height: 1.6;
+   
+}
+
+.centro{
+    text-align: center;
+}
+
+ul{
+    padding-left: 5%;
+    line-height: 1.5;
+}
+
+.cols{
+    display: flex;
+}
+
+/*acomodo en discografia*/
+.columna {
+    align-items: center;
+    text-align: center;
+    flex: 1; /* Hace que cada columna ocupe el mismo espacio disponible */
+    padding: 10px; /* Añade un poco de espacio alrededor del contenido */
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho total */
+    margin-top:3%;
+  }
+  
+.columna-grande {
+    flex: 3; /* Ancho 3 partes */
+    padding: 20px; 
+}
+
+.columna-peque {
+    flex: 1; /* Ancho 1 parte */
+    padding: 20px; 
+}
+
+
+.tracklist{
+    padding-left: 30%;
+    text-align: justify;
+    line-height: 1.5;
+ } 
+
+
+hr{
+    border: 0; /* Elimina el borde predeterminado */
+    height: 0.7vh; /*Ajusta el grosor */
+    background: linear-gradient(to right, #133696, #981fb6, #c0186c); /* Degradado */
+    margin: 2rem 0; /* Espaciado alrededor */
+ }
+
+.der{
+    padding-left: 35%;
+    
+}
+
+#cl{
+    background-color: #fff8e6;
+}
+
+#jiu{
+    font-size: small;
+    font-style: italic;
+}
+
+.num{
+    padding-left: 3%;
+}
+
+#nombre{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-style: italic;
+   
+    color:#420a2c
+}
+
+/*---------------------------------------IMAGENES Y VIDEOS--------------------------------------------------------*/
+
+/*CONTENEDOR DE LA IMAGEN DEL MAPA*/
+.imgcont{
+    text-align: center; 
+}
+
+/*IMAGEN DEL MAPA*/
+#exo9{
+    width: 60%;
+    height: 90%;
+}
+
+.imagenes{
+    border-radius: 20px;
+    
+ }
+
+.exo{
+    width: 400px;
+    height: auto;
+}
+
+.marcovid{
+    border-radius: 20px;
+}
+
+/*video centrado individual*/
+.video{
+    padding-left: 25%;
+}
+
+
+.audio{
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+ 
+/*-------------------------------------HIPERVINCULOS-------------------------------------------------------*/
+ 
+.redes{
+    text-align: center;
+}
+
+
+/*CONTENEDOR TABLA DE CONTENIDOS*/
+.menu{
+    width: 400px;
+    background-color: #fff8e6;
+    padding: 10px;
+    border-radius: 5px; 
+    line-height: 1.5;
+ }
+
+ /*HIPERVINCULOS INTERNOS*/
+.link{
+    text-decoration: none; /* Sin subrayado por defecto */
+    color: #75233c;
+    border-radius: 5px; 
+}
+
+.link:hover {
+    background: linear-gradient(to right, #dfeded 0%, #a09bb1 100%); /* Color de fondo al pasar el mouse */
+    color: #161c2c; /* Color del texto al pasar el mouse */
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.top{
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+.botonlink{
+    display: inline-block; /* Hace que el enlace se comporte como un bloque */
+    text-decoration: none;
+    background-color: #103749;
+    color: #caffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 0 #13141e;
+}
+
+.botonlink:hover{
+    background-color: #f3f3f3;
+    color: #2ba9c8;
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #2bc8c8;
+}
+
+
+/*----------------------------------------ENTRETENIMIENTO----------------------------------------------------*/
+
+.pestañas {
+    max-width: 760px;
+    margin: 20px auto;
+}
+
+/* Ocultar los inputs tipo radio */
+.input_p {
+    display: none;
+}
+
+/* Estilo de los botones (etiquetas) */
+.label_p {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b15077; 
+    color: white; 
+    cursor: pointer;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+}
+
+.label_p:hover {
+    background-color: #783b66; 
+}
+
+/*Botón activo */
+.input_p:checked + .label_p {
+    background-color: #e3efed; 
+    color: #4f315a;
+}
+
+/* Contenido de las pestañas */
+.video_p {
+    display: none; /* Ocultar por defecto */
+    padding: 20px;
+    background-color: #e3efed;
+    border-top: none;
+    border-radius: 5px;
+    border-top-left-radius:0px;
+}
+
+/* Mostrar contenido cuando el botón está seleccionado */
+#p1:checked ~ #vid1,
+#p2:checked ~ #vid2,
+#p3:checked ~ #vid3,
+#p4:checked ~ #vid4,
+#p5:checked ~ #vid5,
+#p6:checked ~ #vid6 {
+    display: block; /* Mostrar contenido activo */
+}
+
+#a1p1:checked ~ #a1vid1,
+#a1p2:checked ~ #a1vid2,
+#a1p3:checked ~ #a1vid3,
+#a1p4:checked ~ #a1vid4,
+#a1p5:checked ~ #a1vid5,
+#a1p6:checked ~ #a1vid6,
+#a1p7:checked ~ #a1vid7 {
+    display: block; /* Mostrar contenido activo */
+}
+
+#lp1:checked ~ #lvid1,
+#lp2:checked ~ #lvid2,
+#lp3:checked ~ #lvid3,
+#lp4:checked ~ #lvid4,
+#lp5:checked ~ #lvid5,
+#lp6:checked ~ #lvid6,
+#lp7:checked ~ #lvid7 {
+    display: block; /* Mostrar contenido activo */
+}
+
+#sp1:checked ~ #svid1,
+#sp2:checked ~ #svid2{
+    display: block; /* Mostrar contenido activo */
+}
+
+#yp1:checked ~ #yvid1,
+#yp2:checked ~ #yvid2,
+#yp3:checked ~ #yvid3,
+#yp4:checked ~ #yvid4,
+#yp5:checked ~ #yvid5,
+#yp6:checked ~ #yvid6 {
+    display: block; /* Mostrar contenido activo */
+}
+
+
+
+/*--------------------------------------TABLAS--------------------------------------------------------*/
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background:linear-gradient(to right, #dfeded 0%, #f3c8dc 100%);
+  }
+
+thead {
+    text-align: center;
+    background-color:#36848a;
+    color: #f8ebf1;
+    font-size: large;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  
+  td, th {
+    border: 2px solid #53144b;
+    padding: 8px;
+    text-align: center;
+    min-width: 10px;
+    max-width: 200px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+  
+  tbody{
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  table td:first-child {
+    width: 200px;
+  }
+  
+  .sinop{
+    text-align:justify;
+  }
+  
+  .tnom{
+    font-weight: bolder;
+    font-size: large;
+    font-style: oblique;
+  }
+
+  /*--------------------------------------------FORMULARIO----------------------------------------------------*/
+ 
+  #formu{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+
+  fieldset{
+    background:linear-gradient(to right, #dfeded 0%, #fff8e6 100%);
+    border-color: #c0186c;
+    padding: 3%;
+  }
+
+  legend{
+    color: #4b1535;
+    font-weight: bolder;
+    background-color: #dcc5db;
+    border-radius: 50%;
+    padding: 1%;
+  }
+
+  .pr{
+    padding-left: 3%;
+  }
+
+  textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+  }
+
+  .botones{
+    text-align: center;
+   
+  }
+
+  #lim{
+    background-color: #c82b74;
+    padding: 1%;
+    border-radius: 20px;
+    font-weight: bolder;
+    color:#fff8e7
+
+  }
+
+  #lim:hover{
+    background: linear-gradient(to right, #70567c 0%, #a8b6d1 100%);
+  }
+
+  #env{
+    background-color:#ace7e7;
+    padding: 1%;
+    border-radius: 20px;
+    font-weight: bolder;
+    color:#4b1535
+
+  }
+
+  #env:hover{
+    background:linear-gradient(to right, #6dbfb8 0%, #75ba75 100%);
+    color:white
+  }
+
+  #resp{
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+  }
+
+  #listaresp{
+    padding-right: 5%;
+  }
+
+  #tabla_aciertos th{
+    background-color: #4b1535;
+    color: white;
+  }
+ 
+  .respuestas {
+    display: none;
+  }
+  
+  /* Mostrar las respuestas cuando se hace clic en el botón de enviar */
+  .respuestas:target {
+    display: block;
+  }
